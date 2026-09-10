@@ -1,0 +1,1 @@
+export default function MetricCard({label,value,meta,trend}){return <div className="metric-card"><div className="metric-label">{label}</div><div className="metric-value">{value}</div><div className="metric-meta">{trend&&<span className="trend">{trend}</span>} {meta}</div></div>}

@@ -1,0 +1,1 @@
+import DashboardLayout from '../layouts/DashboardLayout'; import Calendar from '../components/Calendar'; export default function RetailerCalendar(){return <DashboardLayout role="retailer"><div className="page-head"><div><div className="eyebrow">RETAIL PLANNING</div><h1>12-month demand calendar</h1></div></div><Calendar/></DashboardLayout>}

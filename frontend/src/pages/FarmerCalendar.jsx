@@ -1,0 +1,1 @@
+import DashboardLayout from '../layouts/DashboardLayout'; import Calendar from '../components/Calendar'; export default function FarmerCalendar(){return <DashboardLayout role="farmer"><div className="page-head"><div><div className="eyebrow">FARMER PLANNING</div><h1>12-month cultivation calendar</h1></div></div><Calendar/></DashboardLayout>}
