@@ -1,0 +1,2 @@
+def farmer_recommendations(): return [{'id':1,'crop':'Tomato','expected_demand':180,'score':92},{'id':2,'crop':'Potato','expected_demand':160,'score':87},{'id':3,'crop':'Onion','expected_demand':145,'score':81}]
+def retailer_recommendations(): return [{'id':1,'product':'Rice','recommended_stock':250,'additional_stock':100},{'id':2,'product':'Tomato','recommended_stock':180,'additional_stock':100},{'id':3,'product':'Onion','recommended_stock':160,'additional_stock':60}]

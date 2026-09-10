@@ -1,0 +1,2 @@
+import {useNavigate,useLocation} from 'react-router-dom';
+export default function Sidebar({role}){const nav=useNavigate(),loc=useLocation();const items=role==='farmer'?[['/farmer','Overview'],['/farmer/calendar','Calendar']]:[['/retailer','Overview'],['/retailer/calendar','Calendar']];return <aside className="sidebar"><div className="sidebar-title">{role==='farmer'?'SUPPLY / FARM':'DEMAND / RETAIL'}</div>{items.map(([p,t])=><button key={p} className={loc.pathname===p?'side active':'side'} onClick={()=>nav(p)}>{t}</button>)}</aside>}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006877", "on-primary": "#ffffff", "outline": "#707971", "surface-container-lowest": "#ffffff", "on-surface-variant": "#404942", "on-background": "#111c2d", "secondary-fixed-dim": "#76d4e7", "on-primary-fixed": "#002111", "on-primary-fixed-variant": "#005232", "surface-tint": "#226b47", "on-tertiary-container": "#b4c3e2", "surface-variant": "#d9e3fb", "tertiary": "#2b3953", "primary-fixed-dim": "#8ed6aa", "on-secondary-fixed": "#001f25", "primary": "#004328", "on-secondary-container": "#006b7a", "secondary-container": "#8debff", "inverse-surface": "#273143", "on-secondary-fixed-variant": "#004e5a", "surface-container-highest": "#d9e3fb", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface": "#f9f9ff", "surface-bright": "#f9f9ff", "on-tertiary-fixed-variant": "#394761", "primary-container": "#0d5c3a", "primary-fixed": "#a9f3c5", "tertiary-container": "#42506b", "error": "#ba1a1a", "tertiary-fixed-dim": "#b8c7e6", "inverse-primary": "#8ed6aa", "surface-container-low": "#f0f3ff", "on-error-container": "#93000a", "background": "#f9f9ff", "inverse-on-surface": "#ecf0ff", "on-secondary": "#ffffff", "outline-variant": "#bfc9c0", "on-tertiary-fixed": "#0c1b33", "secondary-fixed": "#a3eeff", "on-surface": "#111c2d", "surface-container": "#e8eeff", "surface-container-high": "#dfe8ff", "on-primary-container": "#8ad2a7", "surface-dim": "#d0daf2", "error-container": "#ffdad6", "tertiary-fixed": "#d7e3ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-2xs": "0.25rem", "gutter-mobile": "0.75rem", "space-3xl": "4rem", "gutter-desktop": "1.5rem", "gutter-tablet": "1rem", "space-2xl": "3rem", "margin-desktop": "2rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "space-xl": "2rem", "space-3xs": "0.125rem", "space-md": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "label-lg": ["Inter"], "display-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "data-mono": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-sm": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 flex items-center px-space-lg gap-space-sm bg-surface-container-lowest"><img alt="DemandBridge AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsvTq7kdUVtzH3EsAUkHONDQbOGtG-htVYxR8cWwUXoN7JzTi0sPeU3qBtxV333F2_pBHzg5NugcYV_yDLJEw_gu-gFgppsdSGNu_Lv90GMf2zIcvYgqgoCT-sNopBM2Nl-CGEnKVpknsMpawRIvKJ1td-vCHPuuxSc5WUZg8rd4fWyRH-2ClAzONYDB29Dph27sQu4cJy9Y_GO9vt2pNYOTQ9aErwjZOZgw8NGwp0QQYLK4lr_FId"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary leading-tight tracking-tight">DemandBridge</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Crop Intelligence</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-xs bg-surface-container-low rounded-xl flex items-center justify-between text-on-surface-variant font-label-md text-label-md"><button class="flex-1 flex items-center justify-center gap-space-2xs py-space-xs px-space-sm rounded-lg bg-surface-container-lowest text-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.04)] transition-all" type="button"><span class="material-symbols-outlined text-[16px]">psychology</span><span>Supply (Farm)</span></button><button class="flex-1 flex items-center justify-center gap-space-2xs py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" type="button"><span>Demand (Retail)</span></button></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Overview Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="smart-12-month-calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-label-lg text-label-lg">Smart 12-Month Calendar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="demand-prediction-and-forecast" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span class="font-label-lg text-label-lg">Demand Prediction &amp; Forecast</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="smart-stock-and-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">Smart Stock &amp; Inventory</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl transition-all bg-primary-container text-on-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.06)]" data-path="farmer-recommendations" href="#"><span class="material-symbols-outlined text-[20px]">eco</span><span class="font-label-lg text-label-lg">Farmer Recommendations</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profit-and-budget-simulator" href="#"><span class="material-symbols-outlined text-[20px]">calculate</span><span class="font-label-lg text-label-lg">Profit &amp; Budget Simulator</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-demand-assistant" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Demand Assistant</span></a><div class="pt-space-sm my-space-xs"><div class="px-space-md py-space-2xs text-[10px] font-bold uppercase tracking-wider text-outline">System &amp; Controls</div></div><a class="flex items-center justify-between px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="alerts-and-notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Alerts &amp; Notifications</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">4</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="platform-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Platform Settings</span></a></nav></div><div class="p-space-md bg-surface-container-low/50"><div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Engine Active</span><span class="font-data-mono text-data-mono text-[11px] text-primary font-bold">99.4% ACC</span></div><div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-snug">Neural intake models synchronized across agricultural and retail feeds.</div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-2xl"><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search crops, commodities, retail SKUs..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-secondary text-[16px]">tune</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Global Market Feed:</span><span class="font-label-sm text-label-sm text-primary font-semibold">Normal Yield Index</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><button aria-label="Notifications" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrjnnOKujigI6Lr5OhbMPjKuQDtNW6_y5INRnBrmzcDv2AvpL1nFkk7HWPVyfdHA9GRMPMMu2P5qIcutbchxo_APi_wpAwoA2HO6dXbclCwJJSOKFKwYm6S19YHFSL-biWbTcpq5-QRgBLSVT-Tz49mesKLcBQ4nYXDBVqeb67qiWRLgy97oElAuitnAgcld66GyzluxCpi_TwGSxvbPfpElWH4j3q9p_yNVD8et8hBwB0QvICOjsH"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">Enterprise Supply &amp; Crop Intelligence</span></div></div></div></header><main class="w-full pt-16 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Location Switcher Context -->
+<div class="relative w-full overflow-hidden bg-surface-container-low px-space-lg lg:px-space-xl py-space-lg">
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-display-sm text-display-sm font-bold text-primary tracking-tight">Good morning, Farmer Ramesh Patel</span>
+<span class="text-display-sm">👋</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm tracking-wide uppercase">Producer Tier 1</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-2xs text-on-surface-variant font-body-md text-body-md">
+<div class="relative inline-flex items-center">
+<span class="material-symbols-outlined text-[18px] text-secondary mr-1">location_on</span>
+<select class="bg-transparent font-label-lg text-label-lg text-on-surface cursor-pointer pr-space-md focus:outline-none hover:text-primary transition-colors" id="region-selector">
+<option selected="" value="nashik">Nashik Agri-Cluster, Maharashtra</option>
+<option value="punjab">Punjab Wheat Belt (Ludhiana Sub-district)</option>
+<option value="karnataka">Karnataka Horticulture Zone (Kolar Valley)</option>
+</select>
+</div>
+<span class="text-outline-variant font-bold">•</span>
+<div class="flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Kharif Mid-Season Review</span>
+<span class="font-body-sm text-body-sm text-outline">Synced 14 mins ago</span>
+</div>
+</div>
+</div>
+<!-- Quick Action CTAs & Secondary Stats -->
+<div class="flex items-center gap-space-sm self-start xl:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-tertiary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Mandi Slips (12)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_chart</span>
+<span>Log Field Output</span>
+</button>
+</div>
+</div>
+<!-- Integrated Micro-Weather Card Banner -->
+<div class="mt-space-lg bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Current Weather Module -->
+<div class="lg:col-span-4 flex items-center gap-space-md">
+<div class="p-space-sm rounded-xl bg-secondary-container/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[40px]">partly_cloudy_day</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-sm text-display-sm font-bold text-on-surface">28°C</span>
+<span class="font-label-lg text-label-lg font-semibold text-secondary">Partly Cloudy</span>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">water_drop</span> 18% Rain</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary">humidity_percentage</span> 62% Hum</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-outline">air</span> 11 km/h</span>
+</div>
+</div>
+</div>
+<!-- 7-Day Forecast Micro-Track -->
+<div class="lg:col-span-5 flex items-center justify-between overflow-x-auto gap-space-xs py-1">
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-surface-container-low text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-outline">Mon</span>
+<span class="material-symbols-outlined text-[18px] text-secondary my-0.5">partly_cloudy_day</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">29°</span>
+</div>
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-error-container/30 text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-error font-semibold">Tue</span>
+<span class="material-symbols-outlined text-[18px] text-error my-0.5">rainy</span>
+<span class="font-data-mono text-data-mono font-bold text-error">27°</span>
+<span class="font-label-sm text-[10px] text-error">70%</span>
+</div>
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-error-container/40 text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-error font-bold">Wed</span>
+<span class="material-symbols-outlined text-[18px] text-error my-0.5">thunderstorm</span>
+<span class="font-data-mono text-data-mono font-bold text-error">26°</span>
+<span class="font-label-sm text-[10px] text-error">85%</span>
+</div>
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-surface-container-low text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-outline">Thu</span>
+<span class="material-symbols-outlined text-[18px] text-secondary my-0.5">cloud</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">28°</span>
+</div>
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-surface-container-low text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-outline">Fri</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container my-0.5">sunny</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">30°</span>
+</div>
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-surface-container-low text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-outline">Sat</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container my-0.5">sunny</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">31°</span>
+</div>
+<div class="flex flex-col items-center px-space-xs py-1 rounded-lg bg-surface-container-low text-center min-w-[50px]">
+<span class="font-label-sm text-label-sm text-outline">Sun</span>
+<span class="material-symbols-outlined text-[18px] text-secondary my-0.5">partly_cloudy_day</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">29°</span>
+</div>
+</div>
+<!-- Weather Advisory Box -->
+<div class="lg:col-span-3 flex items-start gap-space-xs p-space-sm bg-error-container/20 rounded-lg">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-error tracking-wider">Advisory Warning</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-tight mt-0.5">Heavy precipitation predicted for Tue-Wed; delay pesticide application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Worksurface Padding Container -->
+<div class="px-space-lg lg:px-space-xl py-space-lg flex flex-col gap-space-xl">
+<!-- Top KPI Metric Cards (4 items) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Regional Demand -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold tracking-wider">Regional Demand</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-data-mono text-[11px] font-bold">+18.4%</span>
+</div>
+<div class="my-space-sm flex items-baseline justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">14,250</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1 font-semibold">Quintals</span>
+</div>
+<!-- Inline Sparkline SVG -->
+<div class="w-20 h-8">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 80 30">
+<path d="M2 24 L15 20 L30 22 L45 14 L60 16 L78 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M2 24 L15 20 L30 22 L45 14 L60 16 L78 4 V30 H2 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">trending_up</span>
+<span>Surging past historical Q3 wholesale capacity</span>
+</div>
+</div>
+<!-- KPI 2: Top Recommended Crop -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold tracking-wider">Top Recommended Crop</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-data-mono text-[11px] font-bold">Score 94/100</span>
+</div>
+<div class="my-space-sm flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-primary-fixed/50 text-primary">
+<span class="material-symbols-outlined text-[28px]">eco</span>
+</div>
+<div>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">Roma Tomato</span>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">High Yield Potential</div>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Optimal cycle window: 75-80 days</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">A+ Grade</span>
+</div>
+</div>
+<!-- KPI 3: Expected Market Price -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold tracking-wider">Expected Market Price</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed-dim/40 text-primary font-data-mono text-[11px] font-bold">Mandi Avg</span>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">₹3,400</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1 font-semibold">/ Quintal</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">celebration</span>
+<span>Projected high <span class="font-semibold text-primary">₹3,850</span> at festive peak</span>
+</div>
+</div>
+<!-- KPI 4: Overall Risk Level -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold tracking-wider">Overall Risk Level</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold">Safe Zone</span>
+</div>
+</div>
+<div class="my-space-sm flex items-center justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">Low Risk</span>
+<span class="font-label-md text-label-md text-outline ml-1 font-mono">(14%)</span>
+</div>
+<!-- Mini Dial / Gauge representation -->
+<div class="relative w-10 h-10 flex items-center justify-center">
+<svg class="w-10 h-10 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="14, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined text-primary text-[18px] absolute">shield</span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          Stable soil moisture &amp; low transit pest index
+        </div>
+</div>
+</div>
+<!-- Main Section: Crop Demand Prediction Forecast Chart -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<!-- Chart Controls Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded-md bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Crop Demand Forecast &amp; Price Trajectory</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High-confidence 90-day predictive curve trained on retail footfall &amp; wholesale Mandi liquidity</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Crop Select Tabs -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg text-label-md font-label-md">
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-semibold shadow-sm" type="button">Tomato</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Onion</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Potato</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Mango</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Banana</button>
+</div>
+<!-- Time Granularity Selector -->
+<div class="flex items-center bg-surface-container-high p-1 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant">
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest text-primary shadow-xs" type="button">Weekly</button>
+<button class="px-space-xs py-1 rounded hover:text-on-surface" type="button">Monthly</button>
+<button class="px-space-xs py-1 rounded hover:text-on-surface" type="button">Seasonal</button>
+</div>
+</div>
+</div>
+<!-- High Fidelity Visual Forecast SVG Chart with Event Markers -->
+<div class="relative w-full bg-surface-container-low/40 rounded-xl p-space-md lg:p-space-lg overflow-x-auto">
+<div class="min-w-[760px] flex flex-col">
+<!-- Top Metas & Event Tag Indicators -->
+<div class="relative h-8 w-full">
+<div class="absolute left-[38%] -top-1 flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-[11px] font-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span>Independence Day Peak (+24%)</span>
+</div>
+<div class="absolute left-[78%] -top-1 flex items-center gap-1 bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded text-[11px] font-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Ganesh Chaturthi Festive Spike (+38%)</span>
+</div>
+</div>
+<!-- Main SVG Canvas Engine -->
+<div class="relative h-72 w-full">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 900 240">
+<defs>
+<!-- Confidence Interval Gradient -->
+<lineargradient id="confidenceSpread" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#0d5c3a" stop-opacity="0.22"></stop>
+<stop offset="100%" stop-color="#0d5c3a" stop-opacity="0.02"></stop>
+</lineargradient>
+<lineargradient id="forecastLineGrad" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0%" stop-color="#006877"></stop>
+<stop offset="100%" stop-color="#0d5c3a"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Horizontal Guide Lines -->
+<line stroke="#d9e3fb" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="880" y1="40" y2="40"></line>
+<line stroke="#d9e3fb" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="880" y1="90" y2="90"></line>
+<line stroke="#d9e3fb" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="880" y1="140" y2="140"></line>
+<line stroke="#d9e3fb" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="880" y1="190" y2="190"></line>
+<!-- Y-Axis Value Labels -->
+<text fill="#707971" font-family="Inter" font-size="11" text-anchor="end" x="32" y="44">₹4,200</text>
+<text fill="#707971" font-family="Inter" font-size="11" text-anchor="end" x="32" y="94">₹3,600</text>
+<text fill="#707971" font-family="Inter" font-size="11" text-anchor="end" x="32" y="144">₹3,000</text>
+<text fill="#707971" font-family="Inter" font-size="11" text-anchor="end" x="32" y="194">₹2,400</text>
+<!-- Confidence Interval Shaded Band (from Day 30 onwards) -->
+<path d="M 320,135 
+                       C 380,110 440,80 500,95 
+                       C 560,110 640,60 720,45 
+                       C 800,30 840,40 880,50 
+                       L 880,110 
+                       C 840,105 800,100 720,115 
+                       C 640,130 560,165 500,150 
+                       C 440,140 380,155 320,150 
+                       Z" fill="url(#confidenceSpread)"></path>
+<!-- Vertical Current Day Divider -->
+<line stroke="#006877" stroke-dasharray="2 2" stroke-width="1.5" x1="320" x2="320" y1="20" y2="210"></line>
+<rect fill="#006877" height="20" rx="4" width="100" x="270" y="18"></rect>
+<text fill="#ffffff" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="320" y="32">TODAY (DAY 0)</text>
+<!-- Historical Mandi Rate Curve (0 to 320px) -->
+<path d="M 40,175 Q 100,160 160,168 T 240,150 T 320,140" fill="none" stroke="#2b3953" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Historical Data Points -->
+<circle cx="100" cy="160" fill="#2b3953" r="3.5"></circle>
+<circle cx="160" cy="168" fill="#2b3953" r="3.5"></circle>
+<circle cx="240" cy="150" fill="#2b3953" r="3.5"></circle>
+<circle cx="320" cy="140" fill="#006877" r="4.5"></circle>
+<!-- AI Predictive Curve (320px to 880px) -->
+<path d="M 320,140 
+                       C 380,130 440,100 500,118 
+                       C 560,135 640,80 720,65 
+                       C 800,50 840,65 880,75" fill="none" stroke="url(#forecastLineGrad)" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Dashed 3-Year Historical Seasonal Comparison Average -->
+<path d="M 320,140 
+                       C 400,155 480,145 560,135 
+                       C 640,125 720,110 800,105 
+                       L 880,100" fill="none" stroke="#707971" stroke-dasharray="5 5" stroke-width="2"></path>
+<!-- Event Marker Vertical Dotted Guides -->
+<line stroke="#006877" stroke-dasharray="3 3" stroke-width="1" x1="500" x2="500" y1="35" y2="210"></line>
+<circle cx="500" cy="118" fill="#006877" r="5"></circle>
+<circle cx="500" cy="118" fill="#ffffff" r="2"></circle>
+<line stroke="#0d5c3a" stroke-dasharray="3 3" stroke-width="1" x1="720" x2="720" y1="35" y2="210"></line>
+<circle cx="720" cy="65" fill="#0d5c3a" r="5"></circle>
+<circle cx="720" cy="65" fill="#ffffff" r="2"></circle>
+<!-- High Watermark Projection Callout Tooltip -->
+<g transform="translate(670, 15)">
+<rect fill="#111c2d" height="42" rx="6" width="105"></rect>
+<text fill="#8ed6aa" font-family="Inter" font-size="10" font-weight="bold" x="10" y="16">AI PEAK PROJ.</text>
+<text fill="#ffffff" font-family="Inter" font-size="13" font-weight="bold" x="10" y="32">₹3,850 / Qtl</text>
+</g>
+<!-- X-Axis Timeline Markers -->
+<text fill="#707971" font-family="Inter" font-size="11" x="40" y="230">15 Jun</text>
+<text fill="#707971" font-family="Inter" font-size="11" x="180" y="230">01 Jul</text>
+<text fill="#006877" font-family="Inter" font-size="11" font-weight="bold" x="320" y="230">15 Jul (Now)</text>
+<text fill="#707971" font-family="Inter" font-size="11" x="460" y="230">01 Aug</text>
+<text fill="#707971" font-family="Inter" font-size="11" x="600" y="230">15 Aug</text>
+<text fill="#707971" font-family="Inter" font-size="11" x="740" y="230">01 Sep</text>
+<text fill="#707971" font-family="Inter" font-size="11" text-anchor="end" x="870" y="230">15 Sep</text>
+</svg>
+</div>
+<!-- Bottom Legend & Metadata Row -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-4 h-1 bg-primary rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">AI Baseline Forecast</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-1 bg-tertiary rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Historical Mandi Rate</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-0.5 border-b-2 border-dashed border-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3-Yr Seasonal Avg</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-primary-container/20"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confidence Spread (88% - 94%)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-data-mono text-[12px] text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">sync_saved_locally</span>
+<span>Model ID: DB-AGRI-NASHIK-V4.2</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Recommended Crops Grid (Actionable Harvest Decision Cards) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
+<div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Recommended Crops &amp; Action Plan</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Optimized for current Nashik soil composition, reservoir capacity, and retail procurement commitments.</p>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-auto">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Ranked by:</span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-md text-label-md font-bold">Net Margin Potential</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg">
+<!-- Card 1: Roma Tomato -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col">
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-resolution aerial photograph of ripe, vivid red Roma tomatoes growing on staked lush green vines under bright morning sunlight in an Indian agricultural valley, crisp organic farming aesthetics with emerald foliage and rich brown soil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsa7uSWJTEe1IUYgxHhTKReNc2-2KxrQGtSdQA1CLdAhdNi79SpJihpy1KPFtVN8YktLJuShPbA_w2ORYW5K2SIiHi-I2kQMxwjoMrJ6rgmBAl11pTEXQm6p6Hmt-7SP9hV1pD9zYKLemrgeIGNxaYnVlr2RhaSgppjql5_XduapRE1ZMJWEJKGB8ZHXFUqSinmfYTlVPHODbbKB5iub4NSTT9PlS4D2p6Q46Xvs80_-e5o3n69Pe0"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-[11px] font-bold shadow-sm">
+                HIGH DEMAND
+              </div>
+<div class="absolute top-2 right-2 px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-[11px] font-bold">
+                91% Conf.
+              </div>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Tomato (Roma)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹38<span class="font-body-sm text-body-sm text-outline font-normal">/kg</span></span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="flex items-center text-primary font-data-mono text-[12px] font-bold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +22%
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Retailer Advance: 1,400 MT</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-md">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                  Festive catering demand surge expected in 45 days. Low local cold-storage inventory will preserve wholesale pricing.
+                </p>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" type="button">
+<span>Sowing &amp; Harvest Schedule</span>
+<span class="material-symbols-outlined text-[16px]">calendar_add_on</span>
+</button>
+</div>
+<!-- Card 2: Red Onion -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col">
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Freshly harvested ruby red Nashik onions sorted in clean burlap sacks on an organized open-air farm terrace, warm daylight illuminating crisp purple skin with agricultural telemetry overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLcdoZmwnjgE_pJAsFOkSgfWZrE1TAEPwQ4yz6ZrV3cb9GKkUbVI824mCXg5oXibprVPmm8U4QrmbT7N2Ai1Lx8fIQ4G37k05YemVGso9SgbJflTb4Rtzal618cPOOxvKJ0myVh2ZFcge3RGDiHlzOP_IVcn2cuNNFhBSjNoY5Lb5IYi3xKuKo-qMLvINOkIn_LVObf9zzow2GSogCgpp0LXwbHOXtVsf0jsUaGcAhMk8FKe8HrZ2V"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-error text-on-error font-label-sm text-[11px] font-bold shadow-sm">
+                VERY HIGH DEMAND
+              </div>
+<div class="absolute top-2 right-2 px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-[11px] font-bold">
+                88% Conf.
+              </div>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Red Onion (Nashik)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹42<span class="font-body-sm text-body-sm text-outline font-normal">/kg</span></span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="flex items-center text-primary font-data-mono text-[12px] font-bold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +31%
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Export Quota Buffer</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-md">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                  Export quota expansion and regional deficit will drive strong wholesale bids from Gulf shipping corridors.
+                </p>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" type="button">
+<span>Sowing &amp; Harvest Schedule</span>
+<span class="material-symbols-outlined text-[16px]">calendar_add_on</span>
+</button>
+</div>
+<!-- Card 3: Potato (Kufri Jyoti) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col">
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Clean golden Kufri Jyoti potatoes stacked neatly in wooden farm crates under modern processing shed lighting, commercial food supply standard produce photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuPYJO5OEfYfiydHyjo_h3rMFOG95zlp6FShh8hlZUq9NoBZFx7e3h6BclFrEeuIXCLkMO5y8ricwtViSsrxo4DcDuK9DT4Iz6voFtHNx7vTjB9tIsIFxGj4XJIFr6pGP99lZq0oKKKJTkpGi08EPhdENRIgAqyTRxB9YnywxS53pK6xNXHMw_fVmjhjxNY5heg3xfkG-GjAXSC37OF4deCJ8j7BBaJuDDJgacExrRwya5j_fsW86e"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-sm text-[11px] font-bold shadow-sm">
+                MODERATE DEMAND
+              </div>
+<div class="absolute top-2 right-2 px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-[11px] font-bold">
+                85% Conf.
+              </div>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Potato (Kufri)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹24<span class="font-body-sm text-body-sm text-outline font-normal">/kg</span></span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="flex items-center text-outline font-data-mono text-[12px] font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_flat</span> Stable
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Processing Contract</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-md">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                  High yield stability for contracted chips processors. Zero perishability anxiety with guaranteed off-take contracts.
+                </p>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-variant transition-all flex items-center justify-center gap-space-xs" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4: Banana (Grand Naine) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col">
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant plantation of Grand Naine tissue-culture banana plants with heavy fruit bunches protected by blue micro-perforated field bags, tropical agricultural setting with clear irrigation ditches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2rY1YDSZulGeaPqJS64IWGerd4k5BvD8oGj4ibHQDBVgAk1R0z85sYoHsQLH7cgXkKvj6z5_CnyxQClyQYrk-VCcVh99BEt5lhcFKfJr5mtJgZCqvtZ7zZzgj_xaYUinwgWgagbIWFyh-_kqIj6wpC-soH3kFXk8JNV6lb8mGq5NKe-oFtQ1QD8LE9zNJb4miyP7cdJgDNoF_i49aQMQXAscA4I8Y6uvfu9nY9tH5Opqed06JB9zM"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-[11px] font-bold shadow-sm">
+                HIGH DEMAND
+              </div>
+<div class="absolute top-2 right-2 px-space-xs py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-[11px] font-bold">
+                89% Conf.
+              </div>
+</div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Banana (Grand Naine)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹32<span class="font-body-sm text-body-sm text-outline font-normal">/dz</span></span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="flex items-center text-primary font-data-mono text-[12px] font-bold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +15%
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Urban Hypermarket PO</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-md">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                  Fast-ripening distribution channels need steady daily shipments. Direct institutional buyback active at ₹32/dozen.
+                </p>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-variant transition-all flex items-center justify-center gap-space-xs" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Seed to Mandi Assistant Floating Strip -->
+<div class="bg-primary text-on-primary rounded-xl p-space-lg shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="p-space-sm rounded-full bg-surface-container-lowest text-primary">
+<span class="material-symbols-outlined text-[30px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold">Need assistance allocating your 24.5 Acres?</span>
+<p class="font-body-md text-body-md text-on-primary-container leading-tight mt-0.5">
+            AI Demand Assistant can auto-split acreage between Tomato (60%) and Onion (40%) to maximize return against water quota.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow hover:bg-primary-fixed transition-all" type="button">
+          Run Acre Allocation Model
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic switcher micro-interactions
+  document.addEventListener('DOMContentLoaded', () => {
+    const regionSelect = document.getElementById('region-selector');
+    if (regionSelect) {
+      regionSelect.addEventListener('change', (e) => {
+        const value = e.target.value;
+        const toast = document.createElement('div');
+        toast.className = 'fixed bottom-6 right-6 bg-surface-container-highest text-on-surface font-label-lg px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-50 transition-all';
+        toast.innerHTML = `<span class="material-symbols-outlined text-secondary">tune</span> Recalibrating market feeds for <b>${e.target.options[e.target.selectedIndex].text}</b>...`;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2600);
+      });
+    }
+  });
+</script></main></div></body></html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006877", "on-primary": "#ffffff", "outline": "#707971", "surface-container-lowest": "#ffffff", "on-surface-variant": "#404942", "on-background": "#111c2d", "secondary-fixed-dim": "#76d4e7", "on-primary-fixed": "#002111", "on-primary-fixed-variant": "#005232", "surface-tint": "#226b47", "on-tertiary-container": "#b4c3e2", "surface-variant": "#d9e3fb", "tertiary": "#2b3953", "primary-fixed-dim": "#8ed6aa", "on-secondary-fixed": "#001f25", "primary": "#004328", "on-secondary-container": "#006b7a", "secondary-container": "#8debff", "inverse-surface": "#273143", "on-secondary-fixed-variant": "#004e5a", "surface-container-highest": "#d9e3fb", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface": "#f9f9ff", "surface-bright": "#f9f9ff", "on-tertiary-fixed-variant": "#394761", "primary-container": "#0d5c3a", "primary-fixed": "#a9f3c5", "tertiary-container": "#42506b", "error": "#ba1a1a", "tertiary-fixed-dim": "#b8c7e6", "inverse-primary": "#8ed6aa", "surface-container-low": "#f0f3ff", "on-error-container": "#93000a", "background": "#f9f9ff", "inverse-on-surface": "#ecf0ff", "on-secondary": "#ffffff", "outline-variant": "#bfc9c0", "on-tertiary-fixed": "#0c1b33", "secondary-fixed": "#a3eeff", "on-surface": "#111c2d", "surface-container": "#e8eeff", "surface-container-high": "#dfe8ff", "on-primary-container": "#8ad2a7", "surface-dim": "#d0daf2", "error-container": "#ffdad6", "tertiary-fixed": "#d7e3ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-2xs": "0.25rem", "gutter-mobile": "0.75rem", "space-3xl": "4rem", "gutter-desktop": "1.5rem", "gutter-tablet": "1rem", "space-2xl": "3rem", "margin-desktop": "2rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "space-xl": "2rem", "space-3xs": "0.125rem", "space-md": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "label-lg": ["Inter"], "display-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "data-mono": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-sm": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 flex items-center px-space-lg gap-space-sm bg-surface-container-lowest"><img alt="DemandBridge AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsvTq7kdUVtzH3EsAUkHONDQbOGtG-htVYxR8cWwUXoN7JzTi0sPeU3qBtxV333F2_pBHzg5NugcYV_yDLJEw_gu-gFgppsdSGNu_Lv90GMf2zIcvYgqgoCT-sNopBM2Nl-CGEnKVpknsMpawRIvKJ1td-vCHPuuxSc5WUZg8rd4fWyRH-2ClAzONYDB29Dph27sQu4cJy9Y_GO9vt2pNYOTQ9aErwjZOZgw8NGwp0QQYLK4lr_FId"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary leading-tight tracking-tight">DemandBridge</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Crop Intelligence</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-xs bg-surface-container-low rounded-xl flex items-center justify-between text-on-surface-variant font-label-md text-label-md"><button class="flex-1 flex items-center justify-center gap-space-2xs py-space-xs px-space-sm rounded-lg bg-surface-container-lowest text-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.04)] transition-all" type="button"><span class="material-symbols-outlined text-[16px]">psychology</span><span>Supply (Farm)</span></button><button class="flex-1 flex items-center justify-center gap-space-2xs py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" type="button"><span>Demand (Retail)</span></button></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-2xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Overview Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="smart-12-month-calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-label-lg text-label-lg">Smart 12-Month Calendar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="demand-prediction-and-forecast" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span class="font-label-lg text-label-lg">Demand Prediction &amp; Forecast</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="smart-stock-and-inventory" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">Smart Stock &amp; Inventory</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="farmer-recommendations" href="#"><span class="material-symbols-outlined text-[20px]">eco</span><span class="font-label-lg text-label-lg">Farmer Recommendations</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl transition-all bg-primary-container text-on-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.06)]" data-path="profit-and-budget-simulator" href="#"><span class="material-symbols-outlined text-[20px]">calculate</span><span class="font-label-lg text-label-lg">Profit &amp; Budget Simulator</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-demand-assistant" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">AI Demand Assistant</span></a><div class="pt-space-sm my-space-xs"><div class="px-space-md py-space-2xs text-[10px] font-bold uppercase tracking-wider text-outline">System &amp; Controls</div></div><a class="flex items-center justify-between px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="alerts-and-notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Alerts &amp; Notifications</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">4</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="platform-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Platform Settings</span></a></nav></div><div class="p-space-md bg-surface-container-low/50"><div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Engine Active</span><span class="font-data-mono text-data-mono text-[11px] text-primary font-bold">99.4% ACC</span></div><div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-snug">Neural intake models synchronized across agricultural and retail feeds.</div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-2xl"><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search crops, commodities, retail SKUs..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-secondary text-[16px]">tune</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Global Market Feed:</span><span class="font-label-sm text-label-sm text-primary font-semibold">Normal Yield Index</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><button aria-label="Notifications" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrjnnOKujigI6Lr5OhbMPjKuQDtNW6_y5INRnBrmzcDv2AvpL1nFkk7HWPVyfdHA9GRMPMMu2P5qIcutbchxo_APi_wpAwoA2HO6dXbclCwJJSOKFKwYm6S19YHFSL-biWbTcpq5-QRgBLSVT-Tz49mesKLcBQ4nYXDBVqeb67qiWRLgy97oElAuitnAgcld66GyzluxCpi_TwGSxvbPfpElWH4j3q9p_yNVD8et8hBwB0QvICOjsH"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">Enterprise Supply &amp; Crop Intelligence</span></div></div></div></header><main class="w-full pt-16 bg-background flex-1"><div class="flex flex-col w-full">
+<div class="px-space-lg lg:px-space-xl py-space-lg flex flex-col gap-space-2xl max-w-[1600px] mx-auto w-full">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Financial Telemetry &amp; Actuarial Engine</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Profit Analytics &amp; Interactive Budget Simulator</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">Simulate farm capital deployment or retail inventory investment across demand scenarios to maximize ROI and minimize spoilage.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Monte Carlo Model V4.2</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Ledger</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Total Planned Investment</span>
+<span class="material-symbols-outlined text-[20px] text-tertiary">account_balance_wallet</span>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">₹5,00,000</span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container font-data-mono text-data-mono text-[11px] font-semibold text-tertiary">5 Batches</span>
+<span>Deployed farm capital</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Expected Revenue</span>
+<span class="material-symbols-outlined text-[20px] text-primary">payments</span>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">₹7,85,000</span>
+</div>
+<div class="flex items-center gap-space-2xs font-body-sm text-body-sm text-primary">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-data-mono text-data-mono text-[11px] font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span>+57%
+          </span>
+<span class="text-on-surface-variant">Gross growth forecast</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Expected Net Profit</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">trending_up</span>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">₹2,85,000</span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-data-mono text-data-mono text-[11px] font-semibold">Post Risk Deductions</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Projected Profit Margin</span>
+<span class="material-symbols-outlined text-[20px] text-primary">pie_chart</span>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-primary-container tracking-tight">36.3%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 36.3%"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Target ROI</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">speed</span>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary tracking-tight">1.57x</span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-data-mono text-data-mono text-[11px] font-bold">Alpha +0.22x</span>
+<span>vs Mandi Index</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Simulation Parameters</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-semibold">Live Interactive</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider">Scenario Model</label>
+<div class="grid grid-cols-3 gap-space-2xs p-1 bg-surface-container rounded-lg" id="scenario-selector">
+<button class="scenario-btn py-space-xs px-space-xs rounded-md text-center font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-scenario="conservative" type="button">
+              Conservative<br/><span class="text-[10px] font-normal text-on-surface-variant/80">Low Demand</span>
+</button>
+<button class="scenario-btn active py-space-xs px-space-xs rounded-md text-center font-label-sm text-label-sm bg-surface-container-lowest text-primary font-bold shadow-sm transition-all" data-scenario="normal" type="button">
+              Normal<br/><span class="text-[10px] font-semibold text-primary">Expected (Active)</span>
+</button>
+<button class="scenario-btn py-space-xs px-space-xs rounded-md text-center font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-scenario="aggressive" type="button">
+              Aggressive<br/><span class="text-[10px] font-normal text-on-surface-variant/80">Festive Surge</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider" for="budget-slider">Budget Allocation Input</label>
+<span class="font-data-mono text-data-mono text-[15px] font-bold text-primary" id="budget-val">₹2,00,000</span>
+</div>
+<input class="w-full accent-primary bg-surface-container rounded-lg h-2 cursor-pointer" id="budget-slider" max="1000000" min="10000" step="10000" type="range" value="200000"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>₹10k</span>
+<span>₹5,00,000</span>
+<span>₹10,00,000</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider">Product / Commodity Basket</label>
+<div class="relative">
+<select class="w-full h-10 px-space-sm bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-lowest shadow-sm">
+<option selected="">Roma Tomatoes &amp; Nashik Onions Basket</option>
+<option>Premium Basmati Paddy (Export Grade)</option>
+<option>Chili G4 &amp; Turmeric Compound Batch</option>
+<option>Shimla Royal Delicious Apple Consignment</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider">Est. Buying / Prod. Cost</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-space-sm bg-surface-container-low text-on-surface font-data-mono text-data-mono font-semibold rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm" type="text" value="₹18"/>
+<span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant font-medium">/ kg</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider">Target Selling Price</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-space-sm bg-surface-container-low text-on-surface font-data-mono text-data-mono font-semibold rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="selling-price" type="text" value="₹34"/>
+<span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant font-medium">/ kg</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider">Order Volume</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-space-sm bg-surface-container-low text-on-surface font-data-mono text-data-mono font-semibold rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="order-volume" type="text" value="11,100"/>
+<span class="absolute right-space-sm font-label-sm text-label-sm text-on-surface-variant font-medium">kg</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold tracking-wider">Spoilage Buffer</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 px-space-sm bg-surface-container-low text-on-surface font-data-mono text-data-mono font-semibold rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm" type="text" value="6.5%"/>
+<span class="absolute right-space-sm font-label-sm text-label-sm text-secondary font-medium">Risk Discount</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="Close up photography of organic red Roma tomatoes and fresh Nashik onions grouped together in agricultural wooden harvesting crates, captured under bright natural warehouse light with crisp texture and deep vegetable tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1LiZsirB499aZLEl98b9CgoRSGdEAbbFNk3YT-pu7qetYHUwIifXKo9lS6FEwn2z0EV6GBj-0EtxDacdblW4s0gJfB-Bb8qwG8ttdTyeQxAFE7WWSsTAGbUpQj0tP1qDlg0-igdTb6ThVMo_X7rmXzpvwG_9CLH1ABW8AggnndKwrqeqdvxRy8ltyB-9RC0Gx3YjmaVKd7WZAtGFR7ekKrghTYaGZCAQ8h4vYNX-MoxBJmBfM2gRm"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Basket Profile: Hybrid Perishables</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Cold chain required | Shelf life: 9 days | Mandi variance: ±4.1%</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.99]" id="run-sim-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span>Run Real-time Simulation</span>
+</button>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">analytics</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Dynamic Scenario Comparison &amp; Projection</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono text-[11px]">Normalized for 11,100 kg batch</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-sm relative overflow-hidden transition-all" id="card-conservative">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Conservative Case</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-on-surface-variant">25% Prob</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Downside Mandi glut model</span>
+</div>
+<div class="flex flex-col gap-space-2xs py-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Revenue:</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">₹2,90,000</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net Profit:</span>
+<span class="font-data-mono text-data-mono font-bold text-tertiary">₹62,000</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ROI:</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">1.31x</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Margin: 21.4%</span>
+<span class="material-symbols-outlined text-outline text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col justify-between gap-space-sm relative overflow-hidden bg-gradient-to-br from-surface-container-lowest via-surface-container-low to-surface-container-lowest transition-all" id="card-normal">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Normal Case</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">auto_awesome</span>60% Prob
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium text-[11px]">Recommended Target Projection</span>
+</div>
+<div class="flex flex-col gap-space-2xs py-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Revenue:</span>
+<span class="font-data-mono text-data-mono font-bold text-primary text-[15px]">₹3,77,400</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net Profit:</span>
+<span class="font-data-mono text-data-mono font-bold text-primary text-[15px]">₹1,49,400</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ROI:</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary text-[15px]">1.74x</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Margin: 39.5%</span>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-sm relative overflow-hidden transition-all" id="card-aggressive">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">High Demand Case</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">15% Prob</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Diwali/Wedding demand spike</span>
+</div>
+<div class="flex flex-col gap-space-2xs py-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Revenue:</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">₹4,42,000</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net Profit:</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">₹2,14,000</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ROI:</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">2.07x</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Margin: 48.4%</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Investment vs. Revenue vs. Net Margin</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparative metric spreads across modeled probabilities</p>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-tertiary"></span>
+<span class="text-on-surface-variant">Cost / Outlay</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="text-on-surface-variant">Gross Revenue</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="text-on-surface-variant">Net Profit</span>
+</div>
+</div>
+</div>
+<div class="w-full h-64 relative flex items-end">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 700 240">
+<line stroke="#d0daf2" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="20" y2="20"></line>
+<line stroke="#d0daf2" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="75" y2="75"></line>
+<line stroke="#d0daf2" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="130" y2="130"></line>
+<line stroke="#d0daf2" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="185" y2="185"></line>
+<line stroke="#bfc9c0" stroke-width="1.5" x1="40" x2="680" y1="205" y2="205"></line>
+<text fill="#707971" font-family="Inter" font-size="10" text-anchor="end" x="32" y="24">₹5L</text>
+<text fill="#707971" font-family="Inter" font-size="10" text-anchor="end" x="32" y="79">₹3.5L</text>
+<text fill="#707971" font-family="Inter" font-size="10" text-anchor="end" x="32" y="134">₹2L</text>
+<text fill="#707971" font-family="Inter" font-size="10" text-anchor="end" x="32" y="189">₹50k</text>
+<g class="transition-all duration-300" id="chart-group-conservative">
+<rect fill="#2b3953" height="80" rx="4" width="28" x="90" y="125"></rect>
+<rect fill="#006877" height="116" rx="4" width="28" x="122" y="89"></rect>
+<rect fill="#004328" height="25" rx="4" width="28" x="154" y="180"></rect>
+<text fill="#404942" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="136" y="222">Conservative</text>
+<text fill="#707971" font-family="Inter" font-size="10" text-anchor="middle" x="136" y="235">(25% Prob)</text>
+</g>
+<g class="transition-all duration-300" id="chart-group-normal">
+<rect fill="#2b3953" height="80" rx="4" width="28" x="290" y="125"></rect>
+<rect fill="#006877" height="151" rx="4" width="28" x="322" y="54"></rect>
+<rect fill="#004328" height="60" rx="4" width="28" x="354" y="145"></rect>
+<circle cx="368" cy="140" fill="#8ed6aa" r="3"></circle>
+<text fill="#004328" font-family="Inter" font-size="12" font-weight="700" text-anchor="middle" x="336" y="222">Normal (Base)</text>
+<text fill="#006877" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="336" y="235">(60% Prob)</text>
+</g>
+<g class="transition-all duration-300" id="chart-group-aggressive">
+<rect fill="#2b3953" height="80" rx="4" width="28" x="490" y="125"></rect>
+<rect fill="#006877" height="177" rx="4" width="28" x="522" y="28"></rect>
+<rect fill="#004328" height="86" rx="4" width="28" x="554" y="119"></rect>
+<text fill="#404942" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="536" y="222">Aggressive</text>
+<text fill="#707971" font-family="Inter" font-size="10" text-anchor="middle" x="536" y="235">(15% Prob)</text>
+</g>
+</svg>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md bg-gradient-to-r from-secondary-container/20 to-transparent">
+<div class="p-space-xs rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">psychology_alt</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">AI Actuarial Risk Assessment</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-[10px] font-data-mono font-bold text-on-surface-variant">Confidence: 94.6%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong class="font-semibold text-primary">Recommendation:</strong> Locking 70% volume under normal contract and 30% spot wholesale captures maximum upside while capping downside risk to 3.2%.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+<span class="font-label-md text-label-md font-semibold">Cold Chain Logistics Buffer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reefer transport factored at ₹2.40/kg/100km. Real-time temperature loggers integrated into smart contract payouts.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">store</span>
+<span class="font-label-md text-label-md font-semibold">Retail Pre-Booking Pipeline</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 Tier-1 supermarket chains active in Pune-Mumbai corridor have placed intent tenders matching 68% of targeted volume.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+<span class="font-label-md text-label-md font-semibold">Price Deficit Guarantee</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DemandBridge automated hedging mechanism locks minimum floor price at ₹21.50/kg, insulating farmer cost basis.</p>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const slider = document.getElementById('budget-slider');
+      const budgetDisplay = document.getElementById('budget-val');
+      const orderVolume = document.getElementById('order-volume');
+      const scenarioBtns = document.querySelectorAll('.scenario-btn');
+      const runBtn = document.getElementById('run-sim-btn');
+
+      if (slider && budgetDisplay) {
+        slider.addEventListener('input', function(e) {
+          const val = Number(e.target.value);
+          budgetDisplay.textContent = '₹' + val.toLocaleString('en-IN');
+          const estKg = Math.round(val / 18);
+          if (orderVolume) {
+            orderVolume.value = estKg.toLocaleString('en-IN');
+          }
+        });
+      }
+
+      scenarioBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          scenarioBtns.forEach(b => {
+            b.classList.remove('active', 'bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          this.classList.remove('text-on-surface-variant');
+          this.classList.add('active', 'bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+        });
+      });
+
+      if (runBtn) {
+        runBtn.addEventListener('click', function() {
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Computing Stochastic Matrix...</span>';
+          setTimeout(() => {
+            runBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Simulation Synchronized!</span>';
+            setTimeout(() => {
+              runBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">play_circle</span><span>Run Real-time Simulation</span>';
+            }, 2000);
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>
