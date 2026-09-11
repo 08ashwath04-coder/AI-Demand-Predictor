@@ -1,0 +1,29 @@
+date,product,location,quantity_sold,price,discount,holiday,festival,season,day,month,day_of_week,has_festival,season_encoded
+2026-01-01,Rice,Coimbatore,120,60,0,1,New Year,Winter,1,1,3,1,0
+2026-01-02,Rice,Coimbatore,95,60,0,0,None,Winter,2,1,4,0,0
+2026-01-03,Rice,Coimbatore,105,60,5,0,None,Winter,3,1,5,0,0
+2026-01-04,Biscuit,Coimbatore,80,20,0,0,None,Winter,4,1,6,0,0
+2026-01-05,Biscuit,Coimbatore,95,20,10,0,None,Winter,5,1,0,0,0
+2026-01-06,Juice,Coimbatore,70,40,0,0,None,Winter,6,1,1,0,0
+2026-01-07,Juice,Coimbatore,90,40,10,0,None,Winter,7,1,2,0,0
+2026-02-01,Rice,Coimbatore,130,62,0,0,None,Winter,1,2,6,0,0
+2026-02-02,Rice,Coimbatore,125,62,5,0,None,Winter,2,2,0,0,0
+2026-02-03,Biscuit,Coimbatore,110,20,10,0,None,Winter,3,2,1,0,0
+2026-02-04,Juice,Coimbatore,85,40,5,0,None,Winter,4,2,2,0,0
+2026-03-01,Mango,Coimbatore,100,80,0,0,None,Summer,1,3,6,0,1
+2026-03-02,Mango,Coimbatore,130,80,5,0,None,Summer,2,3,0,0,1
+2026-03-03,Mango,Coimbatore,160,75,10,0,None,Summer,3,3,1,0,1
+2026-03-04,Mango,Coimbatore,180,75,10,0,None,Summer,4,3,2,0,1
+2026-03-05,Juice,Coimbatore,120,40,10,0,None,Summer,5,3,3,0,1
+2026-03-06,Juice,Coimbatore,140,40,10,0,None,Summer,6,3,4,0,1
+2026-04-01,Mango,Coimbatore,200,85,5,0,None,Summer,1,4,2,0,1
+2026-04-02,Mango,Coimbatore,220,85,10,0,None,Summer,2,4,3,0,1
+2026-04-03,Rice,Coimbatore,140,62,0,0,None,Summer,3,4,4,0,1
+2026-04-04,Biscuit,Coimbatore,125,20,5,0,None,Summer,4,4,5,0,1
+2026-08-13,Flag,Coimbatore,100,30,0,0,None,Monsoon,13,8,3,0,2
+2026-08-14,Flag,Coimbatore,350,30,10,0,Independence Day,Monsoon,14,8,4,1,2
+2026-08-15,Flag,Coimbatore,500,30,10,1,Independence Day,Monsoon,15,8,5,1,2
+2026-08-16,Flag,Coimbatore,200,30,5,0,None,Monsoon,16,8,6,0,2
+2026-10-20,Sweets,Coimbatore,150,250,0,0,Diwali,Monsoon,20,10,1,1,2
+2026-10-21,Sweets,Coimbatore,300,250,5,1,Diwali,Monsoon,21,10,2,1,2
+2026-10-22,Sweets,Coimbatore,450,240,10,1,Diwali,Monsoon,22,10,3,1,2
